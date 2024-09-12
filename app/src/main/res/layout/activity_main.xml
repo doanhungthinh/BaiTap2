@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/baseline_account_circle_24"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:gravity="left" >
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/account_1"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint ="Tên đăng nhập"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:padding="18dp"
+                android:inputType="text"
+                android:id="@+id/user_input"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:gravity="left" >
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/baseline_lock_24"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint ="Mật khẩu"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:padding="18dp"
+                android:inputType="text"
+                android:id="@+id/password_input"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:backgroundTint="#E03A3A"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:id="@+id/button1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint ="Quên mật khẩu"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập Facebook"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/system_accent1_300"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:id="@+id/button2"/>
+    </LinearLayout>
+
+</RelativeLayout>
